@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg">
+</head>
+<body>
+
+  <div class="navbar">
+    <h1 class="navbar-title">ROCK PAPER SCISSORS</h1>
+  </div>
+
+  <div class="main">
+
+    <div class="selections">
+      <button id="rock-selection">
+        <div class="sign">✊</div>
+      </button>
+      <button id="paper-selection">
+        <div class="sign">✋</div>
+      </button>
+      <button id="scissors-selection">
+        <div class="sign">✌</div>
+      </button>
+    </div>
+
+    <div class="scoreboard">
+      <h2 class="score-info" id="score-info">Who gets 3 rounds wins!</h2>
+      <div class="scores">
+        <div class="score-box">
+          <div class="sign" id="player-sign">🙂</div>
+          <p class="score" id="player-score">Player: 0</p>
+        </div>
+        <div class="score-box">
+          <div class="sign" id="computer-sign">💻</div>
+          <p class="score" id="computer-score">Computer: 0</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <div id="play-again">
+    <button id="play-again-button">
+      <div id="play-again-sign">↻</div>
+    </button>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+    </p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
